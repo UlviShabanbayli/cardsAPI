@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "name": "Tim",
+      "surname": "Parker",
+      "profession": "Coder",
+      "status": "active"
+    },
+    {
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "name": "Tim",
+      "surname": "Parker",
+      "profession": "Coder",
+      "status": "active"
+    },
+    {
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "name": "Tim",
+      "surname": "Parker",
+      "profession": "Coder",
+      "status": "active"
+    },
+    {
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "name": "Tim",
+      "surname": "Parker",
+      "profession": "Coder",
+      "status": "active"
+    }
+  ]
+}
