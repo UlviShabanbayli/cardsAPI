@@ -1,22 +1,6 @@
 {
   "data": [
     {
-      "id": "9765ca3a-c71a-4ef3-88ff-6fba1fa810d4",
-      "picsUrl": "https://mighty.tools/mockmind-api/content/human/4.jpg",
-      "name": "Charlie",
-      "surname": "Webb",
-      "profession": "Carpenter",
-      "status": "active"
-    },
-    {
-      "id": "9e86acfd-85b1-404a-8ec1-273120e022f8",
-      "picsUrl": "https://mighty.tools/mockmind-api/content/human/55.jpg",
-      "name": "Nellie",
-      "surname": "Giles",
-      "profession": "Chef",
-      "status": "inactive"
-    },
-    {
       "id": "1e1b6deb-7e46-4e8b-ab7b-e5601ecd916d",
       "picsUrl": "https://mighty.tools/mockmind-api/content/human/49.jpg",
       "name": "Adele",
@@ -25,19 +9,43 @@
       "status": "active"
     },
     {
-      "id": "7a878b8c-6c67-4e46-babc-efade3e083b0",
-      "picsUrl": "https://mighty.tools/mockmind-api/content/human/65.jpg",
-      "name": "Adrian",
-      "surname": "English",
-      "profession": "Bloger",
-      "status": "inactive"
+      "id": "8a00b2db-ce1c-4a6a-9d4a-7447245f546d",
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/60.jpg",
+      "name": "Kermit",
+      "surname": "Fry",
+      "profession": "Teacher",
+      "status": "active"
     },
     {
-      "id": "1ca92d32-8089-4e2a-953b-cd463f217465",
-      "picsUrl": "https://mighty.tools/mockmind-api/content/human/44.jpg",
-      "name": "Roxie",
-      "surname": "Cuevas",
-      "profession": "Dentist",
+      "id": "831478bc-4731-4970-a869-e58fa8931db1",
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/76.jpg",
+      "name": "Karin",
+      "surname": "Bond",
+      "profession": "Architect",
+      "status": "active"
+    },
+    {
+      "id": "cdd1134a-af12-4267-88ed-63b6f0ed18e4",
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/42.jpg",
+      "name": "Salvador",
+      "surname": "Walton",
+      "profession": "Policeman",
+      "status": "active"
+    },
+    {
+      "id": "ddeefb88-499b-4d98-9638-aea65763afef",
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/55.jpg",
+      "name": "Nellie",
+      "surname": "Giles",
+      "profession": "Chef",
+      "status": "active"
+    },
+    {
+      "id": "49c918af-4b94-4e7d-bf0c-bf80cb0de5e5",
+      "picsUrl": "https://mighty.tools/mockmind-api/content/human/4.jpg",
+      "name": "Charlie",
+      "surname": "Webb",
+      "profession": "Carpenter",
       "status": "active"
     }
   ]

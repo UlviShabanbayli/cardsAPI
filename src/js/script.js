@@ -1,5 +1,23 @@
 "use strict";
 
+const toastAlert = (message, status) => {
+  Toastify({
+    text: "This is a toast",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: status === "active" ? "green" : "red",
+      borderRadius: "10px",
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+};
+
 const baseUrl = "http://localhost:3001";
 
 const grid = document.querySelector(".users__container-grid");
@@ -110,5 +128,13 @@ btnPost.addEventListener("click", async (e) => {
     status: status.value,
   };
 
-  await postData("data", userObj);
+  await postData("data", userObj)
+    .then((res) => {
+      if (res.status === 201) {
+        toastAlert("User Added Successfully", "active");
+      }
+    })
+    .catch((err) => {
+      toastAlert("User Added Failed", "error");
+    });
 });
