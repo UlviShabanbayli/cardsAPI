@@ -1,0 +1,69 @@
+@use "../utills/mixins" as *;
+
+.modal {
+  width: 50vw;
+  border: 2px solid black;
+  background-color: #f5ede8;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+  border-radius: 24px;
+  z-index: 1000;
+
+  div {
+    @include Flex($justify: space-between, $items: center);
+
+    font-size: 32px;
+
+    i {
+      cursor: pointer;
+    }
+  }
+
+  form {
+    margin-top: 32px;
+    @include Flex($direction: column, $gap: 16px);
+
+    input {
+      border-radius: 12px;
+      padding: 12px 16px;
+      outline: none;
+      border: none;
+    }
+
+    select {
+      @extend input;
+      cursor: pointer;
+    }
+
+    button {
+      align-self: center;
+      padding: 12px 24px;
+      border: 1px solid black;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: #000;
+      color: white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}

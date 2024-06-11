@@ -3,73 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="../src/scss/style.css" />
+
+    <script defer src="../src/js/script.js"></script>
     <title>Document</title>
   </head>
   <body>
+    <div class="modal hidden">
+      <div>
+        <h3>Add your information</h3>
+        <i class="fa-solid fa-xmark close"></i>
+      </div>
+      <form action="">
+        <input
+          type="text"
+          placeholder="profile image url"
+          id="profile__image"
+          name="profile__image"
+        />
+        <input type="text" placeholder="name" id="name" name="name" />
+        <input type="text" placeholder="surname" id="surname" name="surname" />
+        <input
+          type="text"
+          placeholder="profession"
+          id="profession"
+          name="profession"
+        />
+        <select name="" id="status">
+          <option value="active">Online</option>
+          <option value="inactive">Offline</option>
+        </select>
+
+        <button class="post">Add</button>
+      </form>
+    </div>
+
+    <div class="overlay hidden"></div>
+
     <main>
       <section class="users">
         <div class="container users__container">
-          <div class="users__container-item">
+          <div class="users__container-header">
             <div>
-              <img
-                src="https://mighty.tools/mockmind-api/content/human/65.jpg"
-                alt=""
-              />
+              <h1>Our Users</h1>
+              <p>Lorem is placeholder text commonly used graphic</p>
             </div>
-            <div>
-              <div>
-                <h2>Tim Parker</h2>
-                <div class="active"></div>
-              </div>
-              <p>Coder</p>
-            </div>
+            <button class="add">Add+</button>
           </div>
-          <div class="users__container-item">
-            <div>
-              <img
-                src="https://mighty.tools/mockmind-api/content/human/65.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <div>
-                <h2>Tim Parker</h2>
-                <div class="active"></div>
-              </div>
-              <p>Coder</p>
-            </div>
-          </div>
-          <div class="users__container-item">
-            <div>
-              <img
-                src="https://mighty.tools/mockmind-api/content/human/65.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <div>
-                <h2>Tim Parker</h2>
-                <div class="active"></div>
-              </div>
-              <p>Coder</p>
-            </div>
-          </div>
-          <div class="users__container-item">
-            <div>
-              <img
-                src="https://mighty.tools/mockmind-api/content/human/65.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <div>
-                <h2>Tim Parker</h2>
-                <div class="active"></div>
-              </div>
-              <p>Coder</p>
-            </div>
-          </div>
+          <div class="users__container-grid"></div>
         </div>
       </section>
     </main>
